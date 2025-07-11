@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'; 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -8,11 +8,15 @@ import Perks from './pages/Perks';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
+import DashboardLayout from './pages/DashboardLayout'; 
+import ProfilePage from './pages/ProfilePage';
+import ChangePassword from './pages/ChangePassword';
+// import Bookings from './pages/Bookings';
+
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,12 +25,20 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+
+        
+        <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={<ProfilePage />} /> {/* default = profile */}
+          <Route path="profile" element={<ProfilePage />} />
+          <Route path="change-password" element={<ChangePassword />} />
+          {/* <Route path="bookings" element={<Bookings />} />  */}
+        </Route>
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
 export default App;
+
 

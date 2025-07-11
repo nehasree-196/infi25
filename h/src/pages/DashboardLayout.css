@@ -1,0 +1,43 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.sidebar-link {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  color: #f1c40f;
+}
+
+.logout-button {
+  margin-top: 20px;
+  padding: 8px;
+  width: 100%;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #f4f4f4;
+}
