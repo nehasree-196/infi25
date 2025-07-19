@@ -63,7 +63,7 @@
 .info-row label {
   font-weight: bold;
   margin-bottom: 6px;
-  color: #2c3e50;
+  color: #d4af37;
 }
 
 .info-row input,
@@ -71,13 +71,15 @@
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
+  background-color: #000000d5;
+  color: white;
   border-radius: 5px;
 }
 
 .info-row input[readonly],
 .info-row textarea[readonly] {
-  background-color: #f5f5f5;
-  color: #888;
+  background-color: #585858d9;
+  color: white;
   cursor: not-allowed;
 }
 
@@ -112,8 +114,8 @@ textarea.about-textarea {
 }
 
 .iitpian-badge {
-  background-color: #efd761;
-  color: #100f0f;
+  border:2px solid #d4af37;
+  color: #d4af37;;
   font-weight: bold;
   border-radius: 20px;
   font-size: 14px;
@@ -122,4 +124,8 @@ textarea.about-textarea {
   text-align: center;
   padding: 6px 14px;
   margin-bottom: 10px;
+}
+
+h1{
+  color: #d4af37;
 }

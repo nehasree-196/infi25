@@ -14,7 +14,7 @@ function DashboardLayout() {
   return (
     <div className="dashboard-container">
       <aside className="sidebar">
-        <h2>Dashboard</h2>
+        <h2 className="sidebar-title">Dashboard</h2>
 
         <NavLink to="profile" className="sidebar-link">Profile</NavLink>
         <NavLink to="change-password" className="sidebar-link">Change Password</NavLink>

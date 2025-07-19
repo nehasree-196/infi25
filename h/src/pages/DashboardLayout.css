@@ -1,25 +1,42 @@
 .dashboard-container {
   display: flex;
   min-height: 100vh;
+  
+   background-image: url("../components/dashbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+
 }
 
 .sidebar {
-  width: 220px;
-  background: #2c3e50;
+  width: 250px;
+  background: #0000008f;
   color: white;
   padding: 20px;
+  position: fixed;
+  margin-top: 32px;
+  margin-left: 50px;
+  border-radius: 20px;
+padding-bottom: 220px;
 }
 
 .sidebar-title {
-  font-size: 22px;
+  font-size: 32px;
   margin-bottom: 20px;
+  border-bottom: 3px solid #e4af37;
+  padding: 5px;
 }
 
 .sidebar-link {
   display: block;
-  margin: 10px 0;
+  margin: 12px 0;
   color: white;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .sidebar-link:hover {
@@ -38,6 +55,19 @@
 
 .dashboard-content {
   flex-grow: 1;
-  padding: 30px;
-  background-color: #f4f4f4;
+  /* padding: 30px; */
+  /* background-color: #d94242; */
+  /* background-color: #000000bc; */
+}
+
+.dashboard-content {
+    margin-top: 2rem;
+    background: #0000008f;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
